@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Артём Шарапов](https://up.htmlacademy.ru/adaptive-individual/2/user/2605805).
-* Наставник: `Неизвестно`.
+* Наставник: `Alexey Koryakin`(https://htmlacademy.ru/profile/alexeycorr).
 
 ---
 
