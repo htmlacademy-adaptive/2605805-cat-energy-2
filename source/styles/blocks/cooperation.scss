@@ -1,0 +1,120 @@
+.cooperation {
+  background-color: $bg-grey;
+
+  &--index {
+    background-color: #ffffff;
+  }
+}
+
+.cooperation__inner {
+  padding-top: 28px;
+  padding-bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cooperation__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $textdark;
+  width: 40%;
+  margin: 0;
+}
+
+.cooperation__adress {
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+  width: 50%;
+}
+
+.cooperation__street,
+.cooperation__city {
+  margin: 0;
+}
+
+.cooperation__map {
+  width: 100%;
+  height: 360px;
+  background-image: url("../../images/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 360px;
+  background-position: center 0;
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../../images/map-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation__inner {
+    padding-top: 63px;
+    padding-bottom: 59px;
+
+    @include pad-set(41px);
+  }
+
+  .cooperation__title {
+    width: 160px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .cooperation__adress {
+    width: 170px;
+    text-align: right;
+  }
+
+  .cooperation__street {
+    margin-bottom: 19px;
+  }
+
+  .cooperation__map {
+    height: 396px;
+    background-image: url("../../images/map-tablet@1x.jpg");
+    background-size: 768px 396px;
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      background-image: url("../../images/map-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation {
+    position: relative;
+  }
+
+  .cooperation__wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 95px;
+    left: 40px;
+    width: 570px;
+    background-color: #ffffff;
+  }
+
+  .cooperation__inner {
+    @include pad-set(35px);
+  }
+
+  .cooperation__title {
+    margin-top: 5px;
+  }
+
+  .cooperation__adress {
+    text-align: left;
+  }
+
+  .cooperation__map {
+    height: 399px;
+
+    background-image: url("../../images/map-desktop@1x.jpg");
+    background-size: 1300px 399px;
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      background-image: url("../../images/map-desktop@2x.jpg");
+    }
+  }
+}

@@ -2,6 +2,21 @@
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
-
+@import "./common/mixins.scss";
+@import "./common/scaffolding.scss";
+@import "./common/style.scss";
 /* BLOCKS */
 @import "./blocks/header.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/programs-list.scss";
+@import "./blocks/program.scss";
+@import "./blocks/instruction.scss";
+@import "./blocks/cooperation.scss";
+@import "./blocks/title-block.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/product.scss";
+@import "./blocks/add-catalog.scss";
+@import "./blocks/add-product.scss";
+@import "./blocks/fields.scss";
+@import "./blocks/program-type-list.scss";
+@import "./blocks/add-list.scss";
