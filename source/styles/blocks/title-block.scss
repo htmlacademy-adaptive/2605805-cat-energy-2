@@ -1,0 +1,47 @@
+.title-block {
+  padding-top: 14px;
+  padding-bottom: 29px;
+}
+
+.title-block__title {
+  @include title;
+
+  margin: 0;
+}
+
+.title-block__text {
+  text-transform: uppercase;
+  color: $textdark;
+  width: 85%;
+  margin-top: 27px;
+  margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .title-block {
+    padding-top: 52px;
+    padding-bottom: 60px;
+  }
+
+  .title-block__title {
+    @include title-t;
+  }
+
+  .title-block__text {
+    font-size: 20px;
+    line-height: 30px;
+    width: 380px;
+    padding-left: 40px;
+    margin-top: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title-block {
+    padding-top: 188px;
+  }
+
+  .title-block__text {
+    padding-left: 0;
+  }
+}
