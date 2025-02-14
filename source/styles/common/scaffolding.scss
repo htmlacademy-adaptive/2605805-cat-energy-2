@@ -95,7 +95,12 @@ html {
     }
   
     .container {
+      @include pad-set(110px);
+    }
+
+    .cooperation__wrapper .container{
       @include pad-set(40px);
     }
+
   }
   

@@ -87,6 +87,9 @@
   align-items: center;
   width: 200%;
 }
+.demo__inner{
+  height: 100%;
+}
 
 .demo__illustration {
   width: 100%;
@@ -199,7 +202,7 @@
     bottom: 0;
     width: 100%;
     height: 462px;
-    background-image: linear-gradient(to right, $bg-grey 0, $bg-grey 50%, $bg-darkgrey 50%, $bg-darkgrey 100%);
+    background: #F2F2F2;
   }
 
   .demo__title {
@@ -453,7 +456,7 @@
 
   .demo__inner {
     height: 463px;
-    background-image: linear-gradient(to right, $bg-grey 0, $bg-grey calc(100% - 325px), $bg-darkgrey calc(100% - 325px), $bg-darkgrey 100%);
+    background: #F2F2F2;
   }
 
   .demo__wrapper {
