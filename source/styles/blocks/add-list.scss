@@ -5,7 +5,8 @@
   }
   
   .add-list__input {
-    display: none;
+    position: absolute;
+    opacity: 0;
   }
   
   .add-list__item {
@@ -37,13 +38,18 @@
   
     @include input-hovers;
   }
-  
+  .add-list__input:focus-visible + .add-list__label::before {
+    outline: 2px solid black; /* Выделение рамкой при фокусе */
+    border-radius: 4px; 
+}
+
   .add-list__input:checked + .add-list__label::before {
     background-image: url("../../images/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 70%;
   }
+
   
   @media (min-width: $tablet-width) {
     .add-list {
