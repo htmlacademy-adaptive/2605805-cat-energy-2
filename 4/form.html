@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Кэт энерджи: Подбор программы</title><link rel="stylesheet" href="styles/styles.css"></head><body><div style="display: none;"><include src="icons/stack.svg"></include></div><header class="header"><div class="container"><div class="header__wrapper header__wrapper--nojs"><div class="header__top"><a class="header__link" href="index.html"><h3 class="visually-hidden">Cat Energy</h3><svg class="header__logo header__logo--mobile" width="35" height="40"><use xlink:href="icons/stack.svg#icon-logo-mobile"></use></svg> <svg class="header__logo header__logo--tablet" width="173" height="58"><use xlink:href="icons/stack.svg#logo-tablet"></use></svg> <svg class="header__logo header__logo--desktop" width="202" height="59"><use xlink:href="icons/stack.svg#logo-desktop"></use></svg> </a><svg class="header__title-logo" width="103" height="20"><use xlink:href="icons/stack.svg#logo-mobile-header"></use></svg> <button class="header__burger" type="button"><svg class="header__burger-icon header__burger-icon--open" width="24" height="19"><use xlink:href="icons/stack.svg#icon-mobile-menu"></use></svg> <svg class="header__burger-icon header__burger-icon--close" width="18" height="18"><use xlink:href="icons/stack.svg#icon-close"></use></svg></button></div><nav class="header__nav"><ul class="header__menu"><li class="header__menu-item"><a href="index.html" class="header__menu-link"><span>Главная</span></a></li><li class="header__menu-item"><a href="catalog.html" class="header__menu-link"><span>Каталог продукции</span></a></li><li class="header__menu-item header__menu-item--active"><a href="form.html" class="header__menu-link"><span>Подбор программы</span></a></li></ul></nav></div></div></header><main><section class="title-block"><div class="container"><h1 class="title-block__title">Подбор программы</h1><p class="title-block__text">Заполните анкету и мы подберем программу питания для вашего кота</p></div></section><section class="selection"><div class="container"><form action="https://echo.htmlacademy.ru" class="selection__form fields" method="get"><div class="fields__wrapper"><div class="fields__set fields__set--personal"><div class="fields__block"><label for="catname" class="fields__label">Имя:*</label> <input type="text" class="fields__textfield" id="catname" name="catname" placeholder="Барсик"></div><div class="fields__block"><label for="weight" class="fields__label">Вес (кг):*</label> <input type="text" class="fields__textfield" id="weight" name="weight" placeholder="7"></div><div class="fields__block"><label for="age" class="fields__label">Возраст (лет):</label> <input type="text" class="fields__textfield" id="age" name="age" placeholder="7"></div></div><div class="fields__set fields__set--program"><ul class="fields__list program-type-list"><li class="program-type-list__item"><input type="radio" class="program-type-list__input" name="program" value="slim" id="slim" checked="checked"> <label for="slim" class="program-type-list__label">Похудение</label></li><li class="program-type-list__item"><input type="radio" class="program-type-list__input" name="program" value="mass" id="mass"> <label for="mass" class="program-type-list__label">Набор массы</label></li><li class="program-type-list__item"><input type="radio" class="program-type-list__input" name="program" value="advice" id="advice"> <label for="advice" class="program-type-list__label">Не знаю (нужен ваш совет)</label></li></ul></div><div class="fields__set fields__set--contacts"><div class="fields__head"><h2 class="fields__title">Контактные данные (владельца кота)</h2></div><div class="fields__inner"><div class="fields__block"><label for="email" class="fields__label">E-mail:*</label> <input type="email" class="fields__textfield" id="email" name="email" placeholder="kuklachev@gmail.com"> <svg class="fields__contact-icon fields__contact-icon--mail" width="17" height="13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve"><use xlink:href="icons/stack.svg#icon-mail"></use></svg></div><div class="fields__block"><label for="phone" class="fields__label">Телефон:*</label> <input type="tel" class="fields__textfield" id="phone" name="phone" placeholder="8 (960) 900-60-90"> <svg class="fields__contact-icon fields__contact-icon--phone" width="21" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve"><use xlink:href="icons/stack.svg#icon-phone"></use></svg></div></div></div><div class="fields__set fields__set--descr"><div class="fields__head"><h2 class="fields__title">Комментарий</h2></div><textarea class="fields__textarea" name="additional" placeholder="Расскажите обо всех повадках кота"></textarea></div><div class="fields__set fields__set--add"><div class="fields__head"><h2 class="fields__title">Дополнительно</h2></div><ul class="fields__list add-list"><li class="add-list__item"><input type="checkbox" class="add-list__input" name="sweetener" id="sweetener" checked="checked"> <label for="sweetener" class="add-list__label">Сахарозаменитель</label></li><li class="add-list__item"><input type="checkbox" class="add-list__input" name="water" id="water"> <label for="water" class="add-list__label">Питьевая вода</label></li><li class="add-list__item"><input type="checkbox" class="add-list__input" name="milk" id="milk"> <label for="milk" class="add-list__label">Молоко</label></li><li class="add-list__item"><input type="checkbox" class="add-list__input" name="vitamins" id="vitamins"> <label for="vitamins" class="add-list__label">Витамины</label></li></ul></div><div class="fields__button-block"><button class="fields__button button" type="submit">Отправить заявку</button> <span class="fields__note">* — Обязательные поля</span></div></div></form></div></section><section class="cooperation"><div class="cooperation__wrapper"><div class="container"><div class="cooperation__inner"><h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2><div class="cooperation__adress"><p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p><p class="cooperation__city">Санкт-Петербург</p></div></div></div></div><div class="cooperation__map" id="map"></div></section></main><footer class="footer"><div class="container"><div class="footer__wrapper"><div class="footer__block footer__block--logo"><a href="index.html" class="footer__logo-link"><h3 class="visually-hidden">Cat Energy</h3><svg class="footer__logo" width="130" height="25"><use xlink:href="icons/stack.svg#logo-footer"></use></svg></a></div><div class="footer__block footer__block--social"><ul class="footer__list social-list"><li class="social-list__item"><a href="" class="social-list__link"><h3 class="visually-hidden">Мы Вконтакте</h3><svg class="social-list__icon social-list__icon--vk" width="22" height="12"><use xlink:href="icons/stack.svg#icon-vk-mobile"></use></svg></a></li><li class="social-list__item"><a href="" class="social-list__link"><h3 class="visually-hidden">Мы в Инстаграме</h3><svg class="social-list__icon social-list__icon--inst" width="16" height="16"><use xlink:href="icons/stack.svg#icon-insta-mobile"></use></svg></a></li><li class="social-list__item"><a href="" class="social-list__link"><h3 class="visually-hidden">Мы в Фейсбуке</h3><svg class="social-list__icon social-list__icon--fb" width="10" height="19"><use xlink:href="icons/stack.svg#icon-fb-mobile"></use></svg></a></li></ul></div><div class="footer__block footer__block--copyright"><a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive"><h3 class="footer__developer">HTML Academy</h3><svg class="footer__developer-icon" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><use xlink:href="icons/stack.svg#logo-htmlacademy"></use></svg></a></div></div></div></footer><script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script><script>ymaps.ready(init);
+    var myMap;
+
+    function init() {
+      if (document.body.clientWidth < 768) {
+        myMap = new ymaps.Map("map", {
+          center: [59.938631, 30.323055],
+          zoom: 17
+        });
+
+        myMap.behaviors.disable('scrollZoom');
+
+        var myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'images/map-pin.png',
+          iconImageSize: [72, 53],
+          iconImageOffset: [-36, -53]
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+      } else if (document.body.clientWidth >= 768 && document.body.clientWidth < 1300) {
+        myMap = new ymaps.Map("map", {
+          center: [59.938631, 30.323055],
+          zoom: 17
+        });
+
+        myMap.behaviors.disable('scrollZoom');
+
+        var myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'images/map-pin.png',
+          iconImageSize: [72, 53],
+          iconImageOffset: [-36, -53]
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+      } else if (document.body.clientWidth >= 1300) {
+        myMap = new ymaps.Map("map", {
+          center: [59.938963, 30.319293],
+          zoom: 17
+        });
+
+        myMap.behaviors.disable('scrollZoom');
+
+        var myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'images/map-pin.png',
+          iconImageSize: [124, 106],
+          iconImageOffset: [-72, -106]
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+      }
+    }</script><script src="scripts/toggle.js"></script></body></html>
