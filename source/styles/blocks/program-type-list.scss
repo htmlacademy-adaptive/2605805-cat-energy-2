@@ -5,9 +5,13 @@
 }
 
 .program-type-list__input {
-  display: none;
+  opacity: 0;
+  position: absolute;
 }
-
+.program-type-list__input:focus-visible + .program-type-list__label::before {
+  outline: 2px solid black; /* Выделение рамкой при фокусе */
+  border-radius: 50%; 
+}
 .program-type-list__item {
   margin-bottom: 12px;
 }
