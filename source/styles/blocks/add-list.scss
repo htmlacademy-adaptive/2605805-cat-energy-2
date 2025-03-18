@@ -1,30 +1,65 @@
 .add-list {
-    @include list-unstyle;
-  
-    margin-top: 14px;
+  @include list-unstyle;
+  margin-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 39px;
   }
-  
-  .add-list__input {
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-bottom: 13px;
+
+    @media (min-width: $tablet-width) {
+      width: 45.6%;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 245px;
+    }
+  }
+
+  &__input {
     position: absolute;
     opacity: 0;
+
+    &:focus-visible + .add-list__label::before {
+      outline: 2px solid black;
+      border-radius: 4px;
+    }
+
+    &:checked + .add-list__label::before {
+      background-image: url("../../icons/stack.svg#icon-tick");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 70%;
+
+      @media (min-width: $tablet-width) {
+        background-size: 60%;
+      }
+    }
   }
-  
-  .add-list__item {
-    margin-bottom: 13px;
-  }
-  
-  .add-list__label {
+
+  &__label {
     position: relative;
     display: inline-block;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
     color: $textdark;
-    padding-left: 45px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding: 6px 0 6px 45px;
     cursor: pointer;
-  
+
+    @include input-hovers;
+
     &::before {
       content: "";
       position: absolute;
@@ -35,61 +70,16 @@
       height: 30px;
       border: 1px solid #ededed;
     }
-  
-    @include input-hovers;
-  }
-  .add-list__input:focus-visible + .add-list__label::before {
-    outline: 2px solid black; /* Выделение рамкой при фокусе */
-    border-radius: 4px; 
-}
 
-  .add-list__input:checked + .add-list__label::before {
-    background-image: url("../../icons/stack.svg#icon-tick");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 70%;
-  }
-
-  
-  @media (min-width: $tablet-width) {
-    .add-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-top: 39px;
-    }
-  
-    .add-list__item {
-      width: 45.6%;
-      margin-bottom: 32px;
-    }
-  
-    .add-list__label {
+    @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 20px;
-      padding-left: 57px;
-      padding-top: 9px;
-      padding-bottom: 9px;
-  
+      padding: 9px 0 9px 57px;
+
       &::before {
         width: 40px;
         height: 40px;
       }
     }
-  
-    .add-list__input:checked + .add-list__label::before {
-      background-size: 60%;
-    }
   }
-  
-  @media (min-width: $desktop-width) {
-    .add-list {
-      justify-content: space-between;
-    }
-  
-    .add-list__item {
-      width: 245px;
-    }
-  }
-  
+}

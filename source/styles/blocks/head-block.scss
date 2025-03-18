@@ -1,0 +1,144 @@
+.head-block {
+  padding-top: 26px;
+  background-image: url("../../images/index-background-mobile@1x.jpg");
+  background-size: 100% 300px;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../images/index-background-mobile@2x.jpg");
+  }
+}
+
+.head-block__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+.head-block__text {
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+
+.head-block__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.head-block__button {
+  font-size: 16px;
+  line-height: 18px;
+  width: 100%;
+  font-weight: 400;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-top: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .head-block {
+    padding-top: 52px;
+    padding-bottom: 528px;
+    background-image: url("../../images/index-can-tablet@1x.jpg");
+    background-position: 30px 251px;
+    background-size: 709px 609px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../images/index-can-tablet@2x.jpg");
+    }
+  }
+
+  .head-block__wrapper {
+    padding-left: 90px;
+  }
+
+  .head-block__title,
+  .head-block__text {
+    color: $textdark;
+    text-align: left;
+  }
+
+  .head-block__title {
+    @include title-t;
+
+    width: 420px;
+    margin-bottom: 40px;
+  }
+
+  .head-block__text {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 51px;
+  }
+
+  .head-block__image {
+    display: none;
+  }
+
+  .head-block__button {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 242px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .head-block {
+    padding-top: 144px;
+    padding-bottom: 0;
+    background-image: url("../../images/index-background-desktop@1x.jpg");
+    background-position: 100% 0;
+    background-size: 720px 694px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../images/index-background-desktop@2x.jpg");
+    }
+  }
+
+  .head-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 602px;
+    padding-left: 80px;
+  }
+
+  .head-block__title {
+    order: 1;
+    margin-top: 79px;
+  }
+
+  .head-block__text {
+    order: 2;
+    margin-bottom: 50px;
+  }
+
+  .head-block__button {
+    order: 3;
+    width: 244px;
+    height: 54px;
+  }
+
+  .head-block__picture {
+    order: 4;
+  }
+
+  .head-block__image {
+    display: inline-block;
+    width: 597px;
+    margin-left: -51px;
+  }
+}

@@ -4,18 +4,24 @@
 @import "./common/fonts.scss";
 @import "./common/mixins.scss";
 @import "./common/scaffolding.scss";
-@import "./common/style.scss";
+@import "./common/main.scss";
 /* BLOCKS */
 @import "./blocks/header.scss";
+@import "./blocks/head-block.scss";
 @import "./blocks/footer.scss";
+@import "./blocks/social-list.scss";
 @import "./blocks/programs-list.scss";
 @import "./blocks/program.scss";
+@import "./blocks/demo.scss";
 @import "./blocks/instruction.scss";
 @import "./blocks/cooperation.scss";
+@import "./blocks/cooperation-block.scss";
 @import "./blocks/title-block.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/product.scss";
 @import "./blocks/add-catalog.scss";
+@import "./blocks/add-catalog-promo-block.scss";
+@import "./blocks/email-subscribe.scss";
 @import "./blocks/add-product.scss";
 @import "./blocks/fields.scss";
 @import "./blocks/program-type-list.scss";
