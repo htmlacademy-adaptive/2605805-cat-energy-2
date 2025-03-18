@@ -1,5 +1,6 @@
 .demo {
-  padding-top: 17px;
+  z-index: 2;
+  padding-top: 13px;
   padding-bottom: 24px;
   background-color: $bg-grey;
 }
@@ -8,14 +9,11 @@
   @include title;
 
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .demo__text {
-  font-family: "Arial", sans-serif;
-  width: 95%;
   margin-top: 0;
-  margin-bottom: 23px;
 }
 
 .demo__stats-list {
@@ -28,8 +26,8 @@
   position: relative;
   display: flex;
   width: 124px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 14px;
   border: 1px solid #cfcfcf;
   border-radius: 5px;
 
@@ -60,11 +58,11 @@
 }
 
 .demo__stats-subtitle {
-  font-family: "Arial", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   position: absolute;
   left: 0;
-  right: 0;
-  bottom: -14px;
+  right: 2px;
+  bottom: -16px;
   margin: 0 auto;
   font-size: 12px;
   line-height: 12px;
@@ -79,28 +77,25 @@
   color: $textdark;
   text-align: center;
   margin-top: 34px;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 .demo__image-wrapper {
   display: flex;
   align-items: center;
-  width: 200%;
+  width: 100%;
 }
 .demo__inner{
   height: 100%;
 }
 
 .demo__illustration {
-  width: 100%;
-  height: 240px;
+  height: 245px;
+
   background-repeat: no-repeat;
-  background-position-x: center;
 
   &--before {
     background-image: url("../../images/before-mobile@1x.png");
-    // background-size: 114% 100%;
-    // background-position: -19px -6px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../images/before-mobile@2x.png");
@@ -109,10 +104,9 @@
 
   &--after {
     background-image: url("../../images/after-mobile@1x.png");
-    // background-position: -19px 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../images/after-mobile@2x.png");
+      background-image: url("../../images/after-mobile@1x.png");
     }
   }
 }
@@ -120,6 +114,7 @@
 .demo__progress {
   padding-bottom: 3px;
   overflow: hidden;
+  margin-bottom: 20px;
 
   .demo__image-wrapper {
     transform: translateX(0);
@@ -162,7 +157,6 @@
   padding-top: 10px;
   padding-bottom: 10px;
   width: 60px;
-  // padding: 10px;
   cursor: pointer;
 }
 
@@ -189,10 +183,14 @@
 @media (min-width: $tablet-width) {
   .demo {
     position: relative;
-    padding-top: 44px;
-    padding-bottom: 65px;
+    padding-top: 46px;
+    padding-bottom: 100px;
     border-top: 1px solid $header-border;
     background-color: transparent;
+  }
+
+  .social-list__icon {
+    top: 5px;
   }
 
   .demo__inner {
@@ -201,18 +199,23 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 462px;
+    height: 460px;
     background: #F2F2F2;
+  }
+
+  .cooperation__inner {
+    padding: 65px 41px 59px;
   }
 
   .demo__title {
     font-size: 60px;
-    margin-bottom: 65px;
+    margin-bottom: 63px;
   }
 
   .demo__text {
-    width: 97%;
-    margin-bottom: 51px;
+    width: 100%;
+    font-family: "Lato", "Arial", sans-serif;
+    margin-bottom: 52px;
   }
 
   .demo__stats {
@@ -266,7 +269,8 @@
   }
 
   .demo__progress {
-    margin-top: 81px;
+    margin-top: 79px;
+    overflow: unset;
 
     .demo__progress-toggle {
       transform: translateX(-50%);
@@ -284,9 +288,10 @@
   }
 
   .demo__image-wrapper {
+    top: 19px;
     position: relative;
     width: 610px;
-    height: 465px;
+    height: 512px;
     margin: 0 auto;
   }
 
@@ -302,7 +307,7 @@
     &--before {
       z-index: 20;
       background-image: url("../../images/before-tablet@1x.png");
-      background-position-x: -25px;
+      background-position-x: 0px;
       background-position-y: 4px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -320,9 +325,23 @@
       transform: scaleX(-1);
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../images/after-tablet@2x.png");
+        background-image: url("../../images/after-tablet@1x.png");
       }
     }
+  }
+
+  .demo__illustration--before {
+    top: -12px;
+    background-position: 4px 4px;
+  }
+
+  .demo__illustration--after {
+    top: 5px;
+    background-position-x: -47px;
+  }
+
+  .demo__image-switcher {
+    top: 4px;
   }
 
   .demo__buttons-block {
@@ -363,7 +382,6 @@
     border-radius: 50%;
     box-shadow: 0 2px 2px 0 #d6d6d6;
     background-color: #ffffff;
-    // cursor: pointer;
 
     &::before {
       content: "";
@@ -452,6 +470,11 @@
     padding-top: 0;
     padding-bottom: 48px;
     border: none;
+    background-color: #ffffff;
+  }
+
+  .social-list__icon {
+    position: unset;
   }
 
   .demo__inner {
@@ -476,6 +499,7 @@
 
   .demo__title {
     margin-top: 51px;
+    font-size: 60px;
     margin-bottom: 145px;
   }
 
@@ -488,7 +512,7 @@
   }
 
   .demo__stats-item {
-    margin-bottom: 57px;
+    margin-bottom: 54px;
   }
 
   .demo__stats-subtitle {
@@ -505,21 +529,43 @@
 
   .demo__progress {
     width: 590px;
+    overflow: unset;
     margin-left: auto;
     margin-top: 0;
   }
 
   .demo__image-wrapper {
+    top: -2px;
     height: 536px;
   }
 
+  .demo__image-switcher {
+    height: 512px;
+  }
+
+  .demo__progress {
+    overflow: unset;
+  }
+
+  .demo__image-switcher {
+    top: 50px;
+  }
+
+  .demo__illustration--before {
+    height: 490px;
+    top: 60px;
+  }
+
+  .demo__illustration--after {
+    top: 50px;
+    height: 525px;
+  }
+
   .demo__illustration {
-    // background-size: 690px 517px;
-    // background-position: -41px 0;
 
     &--before {
       background-image: url("../../images/before-desktop@1x.png");
-      background-position: -41px 0;
+      background-position: 14px 0;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../../images/before-desktop@2x.png");
@@ -531,7 +577,7 @@
       background-position: -59px 0;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../images/after-desktop@2x.png");
+        background-image: url("../../images/after-desktop@1x.png");
       }
     }
   }

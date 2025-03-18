@@ -14,7 +14,6 @@
 
   function burgerClickHandler() {
     nav.classList.toggle('header__wrapper--show');
-    // burger.classList.toggle('header__burger--open');
   }
 
   burger.addEventListener('click', burgerClickHandler);

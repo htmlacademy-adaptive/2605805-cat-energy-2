@@ -1,6 +1,6 @@
 .instruction {
-  padding-top: 18px;
-  padding-bottom: 22px;
+  padding-top: 13px;
+  padding-bottom: 32px;
 }
 
 .instruction__title {
@@ -31,14 +31,14 @@
 }
 
 .instruction__text {
-  font-family: "Arial", sans-serif;
+  font-family: "Lato", sans-serif;
   width: calc(100% - 80px);
   margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .instruction {
-    padding-top: 17px;
+    padding-top: 11px;
     padding-bottom: 49px;
   }
 

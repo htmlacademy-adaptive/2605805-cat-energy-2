@@ -61,6 +61,7 @@
 
 .header__menu {
   @include list-unstyle;
+  overflow: hidden;
 }
 
 .header__menu-item {
@@ -79,7 +80,7 @@
         position: absolute;
         left: 0;
         bottom: 14px;
-        width: 100%;
+        width: 92%;
         height: 2px;
         background-color: $firmcolor;
       }
@@ -217,6 +218,12 @@
   .header__menu-link {
     font-size: 18px;
     line-height: 25px;
+    padding-top: 20px;
+    padding-right: 5px;
+  }
+
+  .header__menu-item--active .header__menu-link:after {
+    margin-bottom: 3px;
   }
 }
 
@@ -226,7 +233,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 51px;
+    padding-top: 53px;
   }
 
   .header__logo {
@@ -242,7 +249,8 @@
   }
 
   .header__menu {
-    justify-content: flex-end;
+    gap: 0;
+    justify-content: right;
 
     &--index {
       .header__menu-link {
@@ -250,6 +258,7 @@
 
         &::after {
           background-color: #ffffff;
+          bottom: 9px;
         }
 
         &:hover,
@@ -265,7 +274,7 @@
   }
 
   .header__menu-item {
-    margin-right: 35px;
+    margin-right: 34px;
 
     &:last-child {
       margin-right: 0;
@@ -274,146 +283,17 @@
 
   .header__menu-link {
     font-size: 20px;
-  }
-}
-.head-block {
-  padding-top: 26px;
-  background-image: url("../../images/index-background-mobile@1x.jpg");
-  background-size: 100% 305px;
-  background-position: center top;
-  background-repeat: no-repeat;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../images/index-background-mobile@2x.jpg");
-  }
-}
-
-.head-block__title {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: normal;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 26px;
-}
-
-.head-block__text {
-  line-height: 14px;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 27px;
-}
-
-.head-block__image {
-  display: block;
-  margin: 0 auto;
-}
-
-.head-block__button {
-  font-size: 14px;
-  line-height: 18px;
-  width: 100%;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  margin-top: 3px;
-}
-
-@media (min-width: $tablet-width) {
-  .head-block {
-    padding-top: 52px;
-    padding-bottom: 533px;
-    background-image: url("../../images/index-can-tablet@1x.jpg");
-    background-position: 30px 251px;
-    background-size: 709px 609px;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../images/index-can-tablet@2x.jpg");
-    }
+    vertical-align: text-bottom;
+    padding-top: 0;
+    padding-bottom: 18px;
+    padding-right: 0;
   }
 
-  .head-block__wrapper {
-    padding-left: 90px;
+  .header__menu-item--active .header__menu-link:after {
+    bottom: 4px;
   }
 
-  .head-block__title,
-  .head-block__text {
-    color: $textdark;
-    text-align: left;
-  }
-
-  .head-block__title {
-    @include title-t;
-
-    width: 420px;
-    margin-bottom: 40px;
-  }
-
-  .head-block__text {
-    font-size: 20px;
-    line-height: 20px;
-    margin-bottom: 43px;
-  }
-
-  .head-block__image {
-    display: none;
-  }
-
-  .head-block__button {
-    font-size: 20px;
-    line-height: 20px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    width: 246px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .head-block {
-    padding-top: 144px;
-    padding-bottom: 0;
-    background-image: url("../../images/index-background-desktop@1x.jpg");
-    background-position: 100% 0;
-    background-size: 720px 694px;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../images/index-background-desktop@2x.jpg");
-    }
-  }
-
-  .head-block__wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    height: 602px;
-    padding-left: 80px;
-  }
-
-  .head-block__title {
-    order: 1;
-    margin-top: 79px;
-  }
-
-  .head-block__text {
-    order: 2;
-    margin-bottom: 50px;
-  }
-
-  .head-block__button {
-    order: 3;
-  }
-
-  .head-block__picture {
-    order: 4;
-  }
-
-  .head-block__image {
-    display: inline-block;
-    width: 597px;
-    margin-left: -48px;
+  .header__wrapper {
+    align-items: baseline;
   }
 }
