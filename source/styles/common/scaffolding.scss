@@ -37,6 +37,8 @@ html {
 
   .container {
     @include pad-set(20px);
+    max-width: $desktop-width;
+    margin: auto;
   }
 
   .button {

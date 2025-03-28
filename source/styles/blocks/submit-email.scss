@@ -1,0 +1,27 @@
+.submit-email {
+  height: 56px;
+  color: #FFFFFF;
+  line-height: 26px;
+  border: 0;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  transition: all 0.3s;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #68B738;
+  font-family: "Oswald", sans-serif;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    margin-top: 0;
+  }
+}

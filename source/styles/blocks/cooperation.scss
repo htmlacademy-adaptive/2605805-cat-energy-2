@@ -6,7 +6,7 @@
   }
 
   &__inner {
-    padding-top: 27px;
+    padding-top: 26px;
     padding-bottom: 26px;
     display: flex;
     justify-content: space-between;
@@ -49,15 +49,16 @@
 
   @media (min-width: $tablet-width) {
     &__inner {
-      padding-top: 64px;
+      padding-top: 61px;
       padding-bottom: 59px;
-      @include pad-set(41px);
+      @include pad-set(40px);
     }
 
     &__title {
       width: 160px;
       font-size: 20px;
-      line-height: 25px;
+      padding-top: 1px;
+      line-height: 26px;
     }
 
     &__adress {
@@ -71,6 +72,7 @@
     }
 
     &__city {
+      padding-top: 4px;
       padding-left: 4px;
     }
 
@@ -92,9 +94,14 @@
       position: absolute;
       z-index: 1;
       top: 95px;
+      height: 199px;
       left: 110px;
       width: 570px;
       background-color: #ffffff;
+    }
+
+    &__city {
+      padding-top: 0px;
     }
 
     &__inner {

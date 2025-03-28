@@ -4,10 +4,10 @@
 
   // Mobile menu
 
-  var nav = document.querySelector('.header__wrapper');
-  var burger = nav.querySelector('.header__burger');
-  var docWidth = document.body.clientWidth;
-  var tabletWidth = 768;
+  let nav = document.querySelector('.header__wrapper');
+  let burger = nav.querySelector('.header__burger');
+  let docWidth = document.body.clientWidth;
+  let tabletWidth = 768;
 
 
   nav.classList.remove('header__wrapper--nojs');
@@ -20,12 +20,12 @@
 
   // Progress block
 
-  var progress = document.querySelector('.demo__progress');
+  let progress = document.querySelector('.demo__progress');
 
   if (progress) {
-    var imgBefore = progress.querySelector('.demo__illustration--before');
-    var imgAfter = progress.querySelector('.demo__illustration--after');
-    var switcher = progress.querySelector('.demo__image-switcher');
+    let imgBefore = progress.querySelector('.demo__illustration--before');
+    let imgAfter = progress.querySelector('.demo__illustration--after');
+    let switcher = progress.querySelector('.demo__image-switcher');
     function updateView(value) {
       imgBefore.style.width = value + '%';
       imgAfter.style.width = (100 - value) + '%';

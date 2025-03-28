@@ -8,6 +8,8 @@
   }
 
   &__icon-plus {
+    width: 30px;
+    height: 30px;
     fill: #d3d3d3;
   }
 
@@ -32,20 +34,24 @@
     background-color: $bg-grey;
   }
 
+  &__wrapper {
+    display: grid;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 26px;
     border: none;
 
     &__wrapper {
-      display: flex;
-      flex-wrap: wrap;
+      grid-gap: 60px;
+      row-gap: 62px;
+      padding-bottom: 63px;
+      grid-template-columns: 1fr 1fr;
     }
 
     &__foot,
     &__item {
       @include pad-set(37px);
-      width: 45.75%;
-      margin-bottom: 63px;
     }
 
     &__foot {
@@ -67,6 +73,7 @@
       font-size: 20px;
       width: 160px;
       margin-top: 52px;
+      line-height: 20px;
       margin-bottom: 27px;
     }
 
@@ -81,9 +88,29 @@
   @media (min-width: $desktop-width) {
     padding-top: 29px;
 
+    &__wrapper {
+      grid-gap: 80px;
+      row-gap: 68px;
+      padding-bottom: 73px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    &__subtitle {
+      margin-top: 42px;
+    }
+
+    &__subtext {
+      margin-bottom: 90px;
+    }
+
+    &__foot {
+      padding-top: 50px;
+    }
+
     &__foot,
     &__item {
-      width: 20.08%;
+      width: 100%;
+      max-width: 245px;
     }
   }
 }

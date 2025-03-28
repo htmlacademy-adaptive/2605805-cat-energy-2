@@ -1,5 +1,5 @@
 .add-product {
-  padding-top: 14.5px;
+  padding-top: 14px;
   padding-bottom: 19px;
   border-bottom: 1px solid #cdcdcd;
 
@@ -64,6 +64,7 @@
       line-height: 20px;
       width: 40%;
       margin-top: 2px;
+      margin-bottom: 6px;
       bottom: 8px;
     }
 
@@ -74,7 +75,8 @@
       }
 
       &--price {
-        width: 95px;
+        width: 50px;
+        padding-left: 9px;
       }
     }
 
@@ -118,6 +120,10 @@
     &__options-cell {
       &--quantity {
         text-align: left;
+      }
+
+      &--price {
+        padding-left: 0;
       }
     }
 
