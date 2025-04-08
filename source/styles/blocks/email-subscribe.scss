@@ -2,90 +2,43 @@
   padding-top: 14px;
   padding-bottom: 39px;
 
-  &__wrapper {
-    position: relative;
-
-    &::before {
-      content: "";
-      z-index: -1;
-      width: 39%;
-      height: 3px;
-      position: absolute;
-      top: 7px;
-      right: -20px;
-      background-color: $firmcolor;
-    }
-
-    &::after {
-      content: "";
-      z-index: -1;
-      background-color: #68b738;
-      height: 3px;
-      width: 120px;
-      position: absolute;
-      top: 12px;
-      left: -161px;
-    }
-  }
-
-  &__title {
-    @include title;
-    display: inline-block;
-    vertical-align: baseline;
-    font-size: 24px;
-    line-height: inherit;
-    width: auto;
-    padding-right: 23px;
-    margin-top: 0;
-    margin-bottom: 35px;
-    background-color: #ffffff;
-  }
-
-  &__text {
-    text-align: center;
-    font-weight: 400;
-    line-height: 24px;
-    color: #000000;
-    font-size: 16px;
-
-    p {
-      margin: 0;
-    }
-
-    @media (min-width: $tablet-width) {
-      font-size: 24px;
-      line-height: 32px;
-      width: 632px;
-      margin: 0 auto;
-    }
-    @media (min-width: $desktop-width) {
-      width: 100%;
-    }
-  }
-
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-  }
-
   @media (min-width: $tablet-width) {
     padding-bottom: 80px;
     overflow-x: hidden;
+  }
 
-    &__inner {
-      gap: 23px;
-    }
+  @media (min-width: $desktop-width) {
+    padding-bottom: 103px;
+  }
+}
 
-    &__title {
-      @include minititle-t;
-      padding-left: 38px;
-      padding-right: 36px;
-      margin-bottom: 63px;
-      font-size: 32px;
-    }
+.email-subscribe__wrapper {
+  position: relative;
 
-    &__wrapper::before {
+  &::before {
+    content: "";
+    z-index: -1;
+    width: 39%;
+    height: 3px;
+    position: absolute;
+    top: 7px;
+    right: -20px;
+    background-color: $firmcolor;
+  }
+
+  &::after {
+    content: "";
+    z-index: -1;
+    background-color: #68b738;
+    height: 3px;
+    width: 120px;
+    position: absolute;
+    top: 12px;
+    left: -161px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
       width: 110%;
       top: 14px;
       right: -30px;
@@ -93,23 +46,75 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 103px;
-
-    &__title {
-      margin-bottom: 74px;
-      padding-left: 0;
-      font-size: 40px;
-    }
-
-    &__wrapper::before {
+    &::before {
       width: 100%;
       right: -120px;
     }
+  }
+}
 
-    &__inner {
-      gap: 24px;
-      justify-content: center;
-      align-items: center;
-    }
+.email-subscribe__title {
+  @include title;
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 24px;
+  line-height: inherit;
+  width: auto;
+  padding-right: 23px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    @include minititle-t;
+    padding-left: 38px;
+    padding-right: 36px;
+    margin-bottom: 63px;
+    font-size: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
+    padding-left: 0;
+    font-size: 40px;
+  }
+}
+
+.email-subscribe__text {
+  text-align: center;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  font-size: 16px;
+
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+    width: 632px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.email-subscribe__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
   }
 }

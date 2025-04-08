@@ -1,18 +1,18 @@
 .instruction {
   padding: 13px 0 32px;
 
-  &__title {
+  .instruction__title {
     @include title;
     margin: 0 0 29px;
   }
 
-  &__list {
+  .instruction__list {
     @include list-unstyle;
     display: grid;
     grid-template-columns: 1fr;
   }
 
-  &__item {
+  .instruction__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +26,7 @@
     }
   }
 
-  &__illustration {
+  .instruction__illustration {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,7 @@
     background-color: $firmcolor;
   }
 
-  &__text {
+  .instruction__text {
     font-family: "Lato", "Arial", sans-serif;
     width: calc(100% - 80px);
     margin: 0;
@@ -48,12 +48,12 @@
   @media (min-width: $tablet-width) {
     padding: 14px 0 53px;
 
-    &__title {
+    .instruction__title {
       font-size: 60px;
       margin-bottom: 72px;
     }
 
-    &__list {
+    .instruction__list {
       column-gap: 127px;
       grid-template-columns: repeat(2, 1fr);
       padding-right: 68px;
@@ -67,7 +67,7 @@
       display: block;
     }
 
-    &__item {
+    .instruction__item {
       flex-wrap: wrap;
       align-items: flex-start;
       max-width: 300px;
@@ -115,13 +115,13 @@
       }
     }
 
-    &__illustration {
+    .instruction__illustration {
       width: 80px;
       height: 80px;
       margin-bottom: 31px;
     }
 
-    &__text {
+    .instruction__text {
       width: 255px;
     }
   }
@@ -129,13 +129,13 @@
   @media (min-width: $desktop-width) {
     padding: 73px 0 25px;
 
-    &__list {
+    .instruction__list {
       grid-gap: 78px;
       padding-right: 0;
       grid-template-columns: repeat(4, 1fr);
     }
 
-    &__item {
+    .instruction__item {
       width: 245px;
       margin-bottom: 0;
 
@@ -146,13 +146,13 @@
   }
 
   @media (max-width: 1436px) {
-    &__list {
+    .instruction__list {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (max-width: 767px) {
-    &__list {
+    .instruction__list {
       grid-template-columns: 1fr;
     }
   }

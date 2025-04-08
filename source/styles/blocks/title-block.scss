@@ -1,12 +1,12 @@
 .title-block {
   padding: 16px 0 27px;
 
-  &__title {
+  .title-block__title {
     @include title;
     margin: 0;
   }
 
-  &__text {
+  .title-block__text {
     text-transform: uppercase;
     color: $textdark;
     width: 85%;
@@ -16,11 +16,11 @@
   @media (min-width: $tablet-width) {
     padding: 74px 0 60px;
 
-    &__title {
+    .title-block__title {
       @include title-t;
     }
 
-    &__text {
+    .title-block__text {
       font-size: 20px;
       line-height: 30px;
       width: 380px;
@@ -32,7 +32,7 @@
   @media (min-width: $desktop-width) {
     padding-top: 188px;
 
-    &__text {
+    .title-block__text {
       padding-left: 0;
     }
   }

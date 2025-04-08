@@ -1,34 +1,32 @@
-.programs-list {
-  &__program {
-    padding: 21px;
-    margin-top: 20px;
-    background-color: $bg-grey;
+.programs-list__program {
+  padding: 21px;
+  margin-top: 20px;
+  background-color: $bg-grey;
 
-    @media (min-width: $tablet-width) {
-      padding-left: 52px;
-      padding-right: 60px;
-      padding-top: 73px;
-      padding-bottom: 62px;
-      margin-top: 0;
-      margin-bottom: 31px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 100%;
-      height: auto;
-      padding-right: 52px;
-      padding-top: 48px;
-      padding-bottom: 62px;
-      margin-top: 28px;
-      margin-bottom: 0;
-    }
+  @media (min-width: $tablet-width) {
+    padding-left: 52px;
+    padding-right: 60px;
+    padding-top: 73px;
+    padding-bottom: 62px;
+    margin-top: 0;
+    margin-bottom: 31px;
   }
 
-  &__wrapper {
-    @media (min-width: $desktop-width) {
-      display: grid;
-      grid-gap: 80px;
-      grid-template-columns: 1fr 1fr;
-    }
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    height: auto;
+    padding-right: 52px;
+    padding-top: 48px;
+    padding-bottom: 62px;
+    margin-top: 28px;
+    margin-bottom: 0;
+  }
+}
+
+.programs-list__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: 1fr 1fr;
   }
 }

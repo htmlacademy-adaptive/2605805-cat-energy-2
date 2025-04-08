@@ -13,73 +13,75 @@
   @media (min-width: $desktop-width) {
     justify-content: space-between;
   }
+}
 
-  &__item {
-    margin-bottom: 13px;
+.add-list__item {
+  margin-bottom: 13px;
 
-    @media (min-width: $tablet-width) {
-      width: 45.6%;
-      margin-bottom: 32px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 245px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 45.6%;
+    margin-bottom: 32px;
   }
 
-  &__input {
-    position: absolute;
-    opacity: 0;
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
 
-    &:focus-visible + .add-list__label::before {
-      outline: 2px solid black;
-      border-radius: 4px;
-    }
+.add-list__input {
+  position: absolute;
+  opacity: 0;
+}
 
-    &:checked + .add-list__label::before {
-      background-image: url("../../icons/stack.svg#icon-tick");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 70%;
+.add-list__input:focus-visible + .add-list__label::before {
+  outline: 2px solid black;
+  border-radius: 4px;
+}
 
-      @media (min-width: $tablet-width) {
-        background-size: 60%;
-      }
-    }
+.add-list__input:checked + .add-list__label::before {
+  background-image: url("../../icons/stack.svg#icon-tick");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+
+  @media (min-width: $tablet-width) {
+    background-size: 60%;
+  }
+}
+
+.add-list__label {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $textdark;
+  padding: 6px 0 6px 45px;
+  cursor: pointer;
+
+  @include input-hovers;
+}
+
+.add-list__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ededed;
+}
+
+@media (min-width: $tablet-width) {
+  .add-list__label {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 9px 0 9px 57px;
   }
 
-  &__label {
-    position: relative;
-    display: inline-block;
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: $textdark;
-    padding: 6px 0 6px 45px;
-    cursor: pointer;
-
-    @include input-hovers;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: block;
-      width: 30px;
-      height: 30px;
-      border: 1px solid #ededed;
-    }
-
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 20px;
-      padding: 9px 0 9px 57px;
-
-      &::before {
-        width: 40px;
-        height: 40px;
-      }
-    }
+  .add-list__label::before {
+    width: 40px;
+    height: 40px;
   }
 }
